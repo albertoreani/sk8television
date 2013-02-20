@@ -13,7 +13,8 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-}
+	background-color:#CFF;
+	}
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -74,23 +75,40 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #006;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
+.footer-container {
+    border-top: 20px solid #006;
 }
 
 .header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
+.footer-container {
+    background: #00F;
 }
+
+.main aside {
+    border-top: 20px solid #006;
+	background: #00F;
+	color: white;
+    padding: 0px 5% 10px;
+}
+
+
 
 .title {
     color: white;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-shadow: 2px 2px 5px #000;
 }
+
+.title2 {
+    color: white;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:italic;
+	text-shadow: 2px 2px 5px #000;
+}
+
 
 /* ==============
     MOBILE: Menu
@@ -111,7 +129,10 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: #006;
+	
+	border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 nav a:hover,
@@ -135,10 +156,39 @@ nav a:hover {
     font-size: 2em;
 }
 
-.main aside {
-    color: white;
+.main article header {
+	background-color:#FF0;
+	border-top: 20px solid #F90;
     padding: 0px 5% 10px;
 }
+
+.main article section {
+	background-color: #0F0;
+	border-top: 20px solid #090;
+    padding: 0px 5% 10px;
+}
+
+.main article footer {
+	background-color: #F9C;
+	border-top: 20px solid #F3C;
+    padding: 0px 5% 10px;
+}
+
+.main aside,
+.main article header,
+.main article section,
+.main article footer {
+	margin-top:10px;
+	border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+	-webkit-box-shadow: 0 5px 10px #000;
+           -moz-box-shadow: 0 5px 10px #000;
+                box-shadow: 0 5px 10px #000;
+	
+}
+
 
 .footer-container footer {
     color: white;
@@ -218,9 +268,9 @@ nav a:hover {
 
     .header-container,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+        -webkit-box-shadow: 0 5px 10px #000;
+           -moz-box-shadow: 0 5px 10px #000;
+                box-shadow: 0 5px 10px #000;
     }
 
 /* ============
